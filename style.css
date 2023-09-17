@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+Header {
+  background-color: #efcc00 ;
+  color: #ffffff;
+  padding: 25px;
+  text-align: center;
+  font-family: 'DynaPuff', cursive; 
+  flex-grow: 1;
+}
+
+h1 {
+    color: #00008b;
+    font-size: 80px;
+}
+
+nav {
+  float: none;
+  width: 100%;
+  background: #efcc00;
+  padding: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
