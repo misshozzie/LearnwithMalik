@@ -2,8 +2,11 @@
 
 Header {
   background-color: #efcc00 ;
+  background-image: url('https://i.imgur.com/YL57bGu.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
   color: #ffffff;
-  padding: 25px;
+  padding: 15px;
   text-align: center;
   font-family: 'DynaPuff', cursive; 
   flex-grow: 1;
@@ -17,7 +20,6 @@ h1 {
 nav {
   float: none;
   width: 100%;
-  background: #efcc00;
   padding: 20px;
 }
 
@@ -33,4 +35,35 @@ li {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 30px;
+}
+
+.wrap{
+  display: flex-fill;
+  grid-template-columns: 82% 18%;
+}
+
+
+.addition {
+  font-size: 300px;
+  display: flex;
+  margin: 10px 10px 10px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 5px 0px grey;
+  font-family: 'DynaPuff', cursive; 
+  padding: 20px;
+}
+
+.options {
+  font-size: 200px;
+  display: flex;
+  margin: 10px 10px 10px;
+  align-items: center;
+  border-radius:5px;
+  color: white;
+  transition: 5s;
+  justify-content: center;
+  box-shadow: 3px 3px 5px 0px grey;
+  font-family: 'DynaPuff', cursive; 
+  padding: 20px;
 }
