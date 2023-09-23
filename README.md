@@ -14,7 +14,7 @@ This simple browser game is designed specifically for toddlers to enhance their 
 
 ## Live Game
 
-file:///C:/Users/missh/Documents/GitHub/LearnwithMalik/index.html
+https://misshozzie.github.io/LearnwithMalik/
 
 
 
