@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 
-Header {
-  background-color: #efcc00 ;
-  background-image: url('https://i.imgur.com/YL57bGu.jpg');
+header {
+  background-color: #efcc00;
+  background-image:   url('https://i.imgur.com/vH5poiZ.png');
   background-repeat: no-repeat;
-  background-size: cover; 
-  color: #ffffff;
+  background-size: cover;
+  color: white;
   padding: 15px;
   text-align: center;
   font-family: 'Calistoga', cursive;
@@ -13,8 +13,9 @@ Header {
 }
 
 h1 {
-    color: #00008b;
-    font-size: 80px;
+  color: black ;
+  text-shadow:black;
+  font-size: 80px;
 }
 
 nav {
@@ -33,25 +34,23 @@ ul {
 li {
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
   font-size: 30px;
 }
 
-.wrap{
+.wrap {
   display: flex-fill;
   grid-template-columns: 82% 18%;
 }
 
-
 .addition {
-  font-size: 200px;
-  display: flex;
-  margin: 10px 10px 10px;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 3px 3px 5px 0px grey;
-  font-family: 'Calistoga', cursive;
-  padding: 20px;
+ font-size: 200px;
+ display: flex;
+ margin: 10px 10px 10px;
+ align-items: center;
+ justify-content: center;
+ box-shadow: 3px 3px 5px 0px grey;
+ font-family: 'Calistoga', cursive;
+ padding: 20px;
 }
 
 .choices {
@@ -59,7 +58,7 @@ li {
   display: flex;
   margin: 10px 10px 10px;
   align-items: center;
-  border-radius:5px;
+  border-radius: 5px;
   color: white;
   transition: 5s;
   justify-content: center;
