@@ -1,12 +1,12 @@
 
 /* ----- CONSTANTS ----- */
-
+const audio = document.getElementById("audio");   
 
 /* -----  STATE VARIABLES ----- */
 /* -----  set the answer 0 as the starting point------ */
 let correctAnswer = 0;
-/* -----  set the level to 0 as the starting point---- */
-let level = 0;
+/* -----  set the level to 1 as the starting point---- */
+let level = 1;
 /* -----  round of all the numbers ---- */
 let num = Math.round(4.7);
 
@@ -23,7 +23,9 @@ let num = Math.round(4.7);
   if (choice.id === "choice1" || choice.id === "choice2" || choice.id === "choice3") {
     if (Number(choice.innerHTML) === correctAnswer) {
       generateProblem();
-    } 
+    } else {
+      audio.play();
+    }
   }
 });
 
@@ -53,17 +55,18 @@ function generateProblem(){
     case 1:
       maxNum = 5;
       break;
-      case 2:
+    case 2:
       maxNum = 10;
       break;
-      case 3:
-      maxNum = 20;
+    case 3:
+      maxNum = 15;
       break;
   } 
 
-  const operators = ["+", "-", "*", "/", ]
+  const operators = ["+", "-", "*", "/"];
   const sum1 = Math.floor(Math.random() * maxNum);
   const sum2 = Math.floor(Math.random() * maxNum);
+
 
 let selectOps;
 do {
@@ -71,32 +74,32 @@ do {
 } while (selectOps === "/" && sum1 % sum2 !==0);
 
 switch(selectOps) {
-  case "+":
+  case '+':
     correctAnswer = sum1 + sum2;
     break;
-    case "-":
+  case '-':
     correctAnswer = sum1 - sum2;
     break;
-    case "*":
+  case '*':
     correctAnswer = sum1 * sum2;
     break;
-    case "+":
+  case '/':
     correctAnswer = sum1 / sum2;
     break;
 }
 document.getElementById("sum1").innerHTML = sum1;
-document.getElementById("sum1").innerHTML = sum2;
-document.getElementById("sum1").innerHTML = selectOps;
+document.getElementById("sum2").innerHTML = sum2;
+document.getElementById("mathOps").innerHTML = selectOps;
 
 let incorrect1, incorrect2;
 do {
-  incorrec1t = Math.floor(Math,random() * maxNum);
+  incorrect1 = Math.floor(Math,random() * maxNum);
 } while (incorrect1 === correctAnswer);
 do {
   incorrect2 = Math.floor(Math.random() * maxNum);
 } while (incorrect2 === correctAnswer || incorrect2 === incorrect1);
 
-let allchoices = [correctAnswer || incorrect1 === incorrect2];
+let allchoices = [correctAnswer, incorrect1, incorrect2];
 
 const shuffleChoices = allchoices.sort(() => Math.random() - 0.5);
   
