@@ -37,12 +37,31 @@ li {
   font-size: 30px;
 }
 
-.wrap {
-  display: flex-fill;
+.wrap1 {
+  font-size: 20px;
+  display: inline;
   grid-template-columns: 82% 18%;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Calistoga', cursive;
+  padding: 20px;
+  cursor: pointer;
 }
 
-.addition {
+
+
+.wrap2 {
+  font-size: 100px;
+  display: inline;
+  grid-template-columns: 82% 18%;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Calistoga', cursive;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.mathOperations {
  font-size: 200px;
  display: flex;
  margin: 10px 10px 10px;
@@ -54,12 +73,61 @@ li {
 }
 
 .choices {
-  font-size: 100px;
+  font-size: 80px;
   display: flex;
   margin: 10px 10px 10px;
   align-items: center;
   border-radius: 5px;
-  color: white;
+  color: black;
+  transition: 5s;
+  justify-content: center;
+  box-shadow: 3px 3px 5px 0px grey;
+  font-family: 'Calistoga', cursive;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.checkAnswer {
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 50px;
+  display: flex;
+  margin: 10px 10px 10px;
+  align-items: center;
+  border-radius: 5px;
+  color: rgb(47, 124, 49);
+  transition: 5s;
+  justify-content: center;
+  box-shadow: 3px 3px 5px 0px grey;
+  font-family: 'Calistoga', cursive;
+  padding:10px;
+  cursor: pointer;
+  
+}
+
+.resetButton {
+  font-size: 30px;
+  display: flex;
+  margin: 10px 10px 10px;
+  align-items: center;
+  border-radius: 5px;
+  color: black;
+  transition: 5s;
+  justify-content: center;
+  box-shadow: 3px 3px 5px 0px grey;
+  font-family: 'Calistoga', cursive;
+  padding: 20px;
+  cursor: pointer;
+}
+
+
+.pageInfo {
+  font-size: 30px;
+  display: flex;
+  margin: 10px 10px 10px;
+  align-items: center;
+  border-radius: 5px;
+  color: black;
   transition: 5s;
   justify-content: center;
   box-shadow: 3px 3px 5px 0px grey;

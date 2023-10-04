@@ -1,110 +1,58 @@
-
 /* ----- CONSTANTS ----- */
-const audio = document.getElementById("audio");   
+const choice1 = document.getElementById("choice1");
+const choice2 = document.getElementById("choice2");
+const choice3 = document.getElementById("choice3");
+const resetButton = document.getElementById("Reset");
 
-/* -----  STATE VARIABLES ----- */
-/* -----  set the answer 0 as the starting point------ */
-let correctAnswer = 0;
-/* -----  set the level to 1 as the starting point---- */
-let level = 1;
-/* -----  round of all the numbers ---- */
-let num = Math.round(4.7);
-
-
-
-/* ----- EVENT LISTENERS ----- */
-/* -----  set click function for the 3 buttons ---- */
- document.addEventListener("click", function(e) {
-  let choice = e.target;
-/* -----  set the choices no duplication numbers on display ---- */
-// use num to convert click items to numbers.
-// num is more straight forward than parseInt as it will
-// not handle decimal points
-  if (choice.id === "choice1" || choice.id === "choice2" || choice.id === "choice3") {
-    if (Number(choice.innerHTML) === correctAnswer) {
-      generateProblem();
-    } else {
-      audio.play();
-    }
-  }
-});
-
-
-
-/* ----- CATCHED ELEMENTS ----- */
-document.getElementById("level1").addEventListener("click", function () {
-  level = 1;
-  generateProblem();
-});
-document.getElementById("level2").addEventListener("click", function () {
-  level = 2;
-  generateProblem();
-});
-document.getElementById("level3").addEventListener("click", function () {
-  level = 3;
-  generateProblem();
-});
-
+/* ----- VARIABLES ----- */
+let answer = 0;
 
 
 /* ----- FUNCTIONS ----- */
-/* -----  generate problems to solve ---- */ 
-function generateProblem(){
-  let maxNum;
-  switch(level) {
-    case 1:
-      maxNum = 5;
-      break;
-    case 2:
-      maxNum = 10;
-      break;
-    case 3:
-      maxNum = 15;
-      break;
-  } 
+function generateProblem() { 
+  let num1 = Math.floor(Math.random() * 10);
+  let num2 = Math.floor(Math.random() * 10);
+  let wrongAns1 = Math.floor(Math.random() * 10);
+  let wrongAns2 = Math.floor(Math.random() * 10);
+      allChoices = [],
+      shuffleshChoices = [];
 
-  const operators = ["+", "-", "*", "/"];
-  const sum1 = Math.floor(Math.random() * maxNum);
-  const sum2 = Math.floor(Math.random() * maxNum);
-
-
-let selectOps;
-do {
-  selectOps = operators[Math.floor(Math.random() * operators.length)];
-} while (selectOps === "/" && sum1 % sum2 !==0);
-
-switch(selectOps) {
-  case '+':
-    correctAnswer = sum1 + sum2;
-    break;
-  case '-':
-    correctAnswer = sum1 - sum2;
-    break;
-  case '*':
-    correctAnswer = sum1 * sum2;
-    break;
-  case '/':
-    correctAnswer = sum1 / sum2;
-    break;
-}
-document.getElementById("sum1").innerHTML = sum1;
-document.getElementById("sum2").innerHTML = sum2;
-document.getElementById("mathOps").innerHTML = selectOps;
-
-let incorrect1, incorrect2;
-do {
-  incorrect1 = Math.floor(Math,random() * maxNum);
-} while (incorrect1 === correctAnswer);
-do {
-  incorrect2 = Math.floor(Math.random() * maxNum);
-} while (incorrect2 === correctAnswer || incorrect2 === incorrect1);
-
-let allchoices = [correctAnswer, incorrect1, incorrect2];
-
-const shuffleChoices = allchoices.sort(() => Math.random() - 0.5);
+  answer = num1 + num2;
   
-  document.getElementById("choice1").innerHTML = shuffleChoices[0];
-  document.getElementById("choice2").innerHTML = shuffleChoices[1];
-  document.getElementById("choice3").innerHTML = shuffleChoices[2];
+  document.getElementById("num1").innerHTML = num1; 
+  document.getElementById("num2").innerHTML = num2; 
+
+  allChoices = [answer, wrongAns1, wrongAns2];
+
+  for (i = allChoices.length; i--;){
+    shuffleshChoices.push(allChoices.splice(Math.floor(Math.random() * (i + 1)), 1)[0]);
+  };
+
+  choice1.innerHTML = shuffleshChoices[0];
+  choice2.innerHTML = shuffleshChoices[1];
+  choice3.innerHTML = shuffleshChoices[2]; 
 };
-generateProblem()
+
+choice1.addEventListener("click", function(){
+    if(choice1.innerHTML == answer){
+      generateProblem();
+    }
+});
+
+choice2.addEventListener("click", function(){
+    if(choice2.innerHTML == answer){
+      generateProblem();
+    }
+    });
+
+choice3.addEventListener("click", function(){
+    if(choice3.innerHTML == answer){
+      generateProblem();
+    }
+});
+
+resetButton.addEventListener("click", function(){
+  generateProblem();
+  });
+
+  generateProblem()

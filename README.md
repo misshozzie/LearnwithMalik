@@ -50,12 +50,15 @@ HTML, CSS, Javascript, VS Code, Github,
 ## GETTING STARTED
 ## Instructions:
 
-While this game is designed to encompass four categories, in the current version 1.0, only the Math category is available. This category further branches into sub-categories such as Addition, Subtraction, Multiplication, and Division. 
+While this game is designed to encompass four categories, in the current version 1.0, only the Math category is available. This is Math category. Kids/player will experiences four (4) operators available; addition, substraction, multiplication, and division. 
 
-* Upon clicking or opening the game link, the Math function will be activated by default.
-* Choose your answer by clicking on the appropriate option.
-* If your answer is correct, a new question will be generated automatically.
-* If your answer is incorrect, an audible alert will sound and the game will await your next selection.
+* The start of the game will start at level 1, the easy mode and the most difficult level is the highest level.
+* Ease level have only 10 clicks chances with 3 choices to choose.
+* level 1 brings you up to level 2 if you get 3 correct answer out of 10 chances.
+* level 2 brings you up to level 3 if you get 5 correct answer out of 10 chances.
+* level 3 brings you up to winning stage if you get 7 correct answer out of 10 chances.
+* Once you reach winning stage, if you lost, you can reset and play again. 
+* If you win, congratulation text will appear to congratulate the player. Player also have a choice to start again.
 
 
 
