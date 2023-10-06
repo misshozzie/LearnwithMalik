@@ -59,15 +59,17 @@ h1 {
 
 #submit{
   background-color: #6cb4b8;
-  margin-left: 43%;
   font-size: 33px;
   font-family: 'Pangolin', cursive;
   }
 
-
+#button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #restart{
 background-color: #6cb4b8;
-margin-right: 28%;
 font-size: 33px;
 font-family: 'Pangolin', cursive;
 }

@@ -4,15 +4,48 @@ let maxRandomNumber = 5;
 let gameIsActive = true;
 
 function generateQuestion() {
-	const operator = Math.random() >= 0.5 ? '+' : '-';
+	const operator = getOperator ();
 	let a = Math.floor(Math.random() * maxRandomNumber) + 1;
 	let b = Math.floor(Math.random() * maxRandomNumber) + 1;
 	if (operator === '-' && a < b) {
 		[a, b] = [b, a];
+	} if (operator === '/') {
+    if (a < b) {
+		[a, b] = [b, a];
 	}
-	currentAnswer = operator === '+' ? a + b : a - b;
+  let c = Math.floor(a / b);
+  a = b * c;
+};
+	currentAnswer = getAnswer(operator, a, b) 
 	document.getElementById('question').innerText = `${a} ${operator} ${b} = ?`;
 }
+
+function getOperator () {
+  let random = Math.random()
+    if(random >= 0.75) {
+      return "+";
+  } if(random >= 0.55) {
+      return "-";
+  } if(random >= 0.25) {
+    return "*";
+  } else {
+    return "/";
+  }
+};
+
+
+function getAnswer (operator, a, b) {
+  if (operator === "+") {
+    return a + b;
+  } if (operator === "-") {
+    return a - b;
+} if (operator === "*") {
+  return a * b;
+} if (operator === "/") {
+  return a / b;
+}
+};
+  
 
 function submitAnswer() {
   if (!gameIsActive) return;
@@ -27,6 +60,7 @@ function submitAnswer() {
   } else {
       document.getElementById('message').textContent = 'You lost!';
       gameIsActive = false;
+      document.getElementById("submit").style.display = "none";
   }
   document.getElementById('answer').value = '';
   generateQuestion();
