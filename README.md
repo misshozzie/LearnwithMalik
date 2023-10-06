@@ -20,7 +20,7 @@ https://misshozzie.github.io/LearnwithMalik/
 ## Website Wireframe Sketch
 
 This is my wireframe sketch I did. I wanted it to be more user kids friendly. since the user will be kids. I wanted it to be educational and yet simple.
-![App Screenshot](https://i.imgur.com/M6fuT4F.jpg)
+![App Screenshot](https://i.imgur.com/M6fuT4Fl.jpg)
 
 
 
