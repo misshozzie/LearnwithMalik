@@ -2,18 +2,25 @@
 
 body{
   background-color: #bedce3;
+  background-image: url('https://i.imgur.com/fWJQYtw.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: center;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 70px;
+  font-weight: 700;
   text-align: center;
   color: #6cb4b8;
+  text-shadow: 3px 3px 7px #fd6822;
   font-family: 'Pangolin', cursive;
 }
 
 #question {
   font-size:80px;
+  font-weight: 500;
+  text-shadow: 3px 3px 7px #e3dcd5;
   text-align: center;
   font-family: 'Pangolin', cursive;
   color: #fd6822;

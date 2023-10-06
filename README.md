@@ -1,6 +1,7 @@
+
 # LEARN WITH MALIK
 
-This simple browser game is designed specifically for toddlers to enhance their educational knowledge. With its vibrant colors and engaging, wholesome content, it’s truly a fun and dedicated learning tool for kids.
+This simple browser game is dedicated for toddlers for them to learn educational knowledge. It's colorful, it looks fun, and wholesome, really dedicated for kids. 
 
 
 ## Author/ Designer/ Coder social links:
@@ -14,27 +15,22 @@ This simple browser game is designed specifically for toddlers to enhance their 
 
 ## Live Game
 
-https://misshozzie.github.io/LearnwithMalik/
+Insert gif or link to demo
 
 
 
 ## Website Wireframe Sketch
 
-This is a wireframe sketch I’ve created with a focus on user-friendliness, especially since the primary users will be children. My aim was to design an interface that is not only fun and educational, but also enjoyable. 
-![App Screenshot](https://i.imgur.com/W6bzbDb.jpg)
+This is my wireframe sketch I did. I wanted it to be more user kids friendly. since the user will be kids. I wanted it to be educational and yet simple.
+![App Screenshot](https://i.imgur.com/M6fuT4F.jpg)
 
 
-
-
-## Logo
-
-![Logo](https://i.imgur.com/X9qBNIem.png) 
 
 
 ## Color Palette
 
-This browser game will feature a variety of colors, with five main ones. My intention is to create a vibrant and bright visual experience..
-![App Screenshot](https://i.imgur.com/lMFXAOp.png)
+There will be more colors in this browser games, those 5(five) are the main ones. I wanted it to be colorful and bright.
+![App Screenshot](https://i.imgur.com/6deXtQS.png)  
 
 
 
@@ -46,42 +42,55 @@ This browser game will feature a variety of colors, with five main ones. My inte
 ## Technology and Tools Used
 
 HTML, CSS, Javascript, VS Code, Github,
-
 ## GETTING STARTED
 ## Instructions:
 
-While this game is designed to encompass four categories, in the current version 1.0, only the Math category is available. This is Math category. Kids/player will experiences four (4) operators available; addition, substraction, multiplication, and division. 
+How to play:
 
-* The start of the game will start at level 1, the easy mode and the most difficult level is the highest level.
-* Ease level have only 10 clicks chances with 3 choices to choose.
-* level 1 brings you up to level 2 if you get 3 correct answer out of 10 chances.
-* level 2 brings you up to level 3 if you get 5 correct answer out of 10 chances.
-* level 3 brings you up to winning stage if you get 7 correct answer out of 10 chances.
-* Once you reach winning stage, if you lost, you can reset and play again. 
-* If you win, congratulation text will appear to congratulate the player. Player also have a choice to start again.
+* Begin the game and input your answer in the provided box.
+* Click 'Submit' to see if you've won.
+* If you succeed, you'll advance to level 2 and even level 3, which offers a bit more challenge. 
+    
+    However, if you happen to lose, simply press the 'Restart' button to try again.
 
 
 
 ## Next Features:
 
-* Spelling Bee Category
-* Science Category
-* Social Category
-* Drag and Drop function
+Exciting upcoming features:
 
+* Explore more mathematical operators like _multiplication and division_, as the game evolves to keep pace with your learning.
+* Unlock the _Abacus level_ to enhance your counting and math skills in a playful way.
+* Challenge your _spelling abilities_ with the Spelling Bee level, where words and numbers come together * for even more educational fun.
+* Get ready for an adventure in learning that's both entertaining and enriching. 'Learn with Malik' - making math magical for young minds!"
+
+Feel free to make any additional adjustments or ask for further edits if needed!
 
 
 ## Challenges:
 
-As a beginner in the realm of coding, I find every aspect to be both challenging and daunting. The task of planning is particularly difficult; I often find myself unsure of where to start, how to code, and which codes to use. However, being a highly visual person, I’ve found that starting with sketches and lists helps me organize my thoughts. I jot down what I want to achieve, decide on a color palette, and outline the features of the games.
+My journey in game development presented several challenges, primarily stemming from the need to incorporate my instructors' suggested features. The task of creating my very first game and integrating additional elements into the one you've already seen was a monumental challenge in itself.
 
-Throughout this journey, two quotes have served as my guiding principles: “Don’t Repeat Yourself” and “If it’s working, don’t touch it.” These mantras have kept me focused and productive in the face of challenges.
+One of the most significant hurdles was the process of inserting the required coding. This task demanded meticulous attention to detail and a deep understanding of programming principles. It involved not only writing new lines of code but also carefully integrating them into the existing framework.
 
-## References:
-* 
+Another major challenge was the strategic thinking required to determine where to place the new logic. Game development is like solving a complex puzzle, and deciding how to seamlessly integrate new features while maintaining the overall gameplay experience was no small feat. This often meant revisiting and reworking existing components to ensure everything worked harmoniously.
 
+In essence, the entire process was a continuous cycle of brainstorming, coding, testing, and refining. It required a substantial amount of critical thinking and problem-solving skills. Despite the challenges, the experience of creating a game from scratch and enhancing it with new features has been both rewarding and educational.
+
+## favorite Code:
+
+"My favorite piece of code in this game is:
+
+*window.onload = function( ){ }*
+
+At first glance, it may seem quite simple. However, for me, it holds a tremendous amount of power and significance. This single line of code provides me with a profound sense of security, assuring me that my entire codebase will function flawlessly in a live environment.
+
+The 'window.onload' event handler ensures that all the code inside it is executed only after the entire web page, including its content and resources, has fully loaded. This level of precision is vital, especially in game development, where timing and synchronization are critical.
+
+When the 'window.onload' event is triggered, I know that everything is in place, all assets are loaded, and the game is ready to run smoothly. It's like the moment before a grand performance, where everything is set, and I can be confident that players will experience the game exactly as intended.
+
+In the world of coding, it's often the seemingly simple and elegant solutions that bring the most peace of mind. This single line of code exemplifies that principle, making it my favorite and most reassuring part of the game's codebase."
 ## Feedback
 
 If you have any feedback, please email me at artist@hosannaikigai.com
-
 
