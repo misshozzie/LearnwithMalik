@@ -85,7 +85,7 @@ Another major challenge was the strategic thinking required to determine where t
 
 This if statement checks 2 conditions. and if both conditions are true, this inside curly bracket will be executed.
 
-What I like abou this is... This code is simple and concise, yet it accomplishes a meaningful task (swapping two variables if a condition is met). 
+What I like about this is... This code is simple and concise, yet it accomplishes a meaningful task (swapping two variables if a condition is met). 
 The use of array destructuring to swap variables in JavaScript is considered an elegant solution because it doesn't require a temporary variable.
 This code could be part of a larger function where the order of *a* and *b* matters when the operator is *-*, making it a crucial piece of logic.
 This piece of code might have helped me understand some important concepts in JavaScript, such as comparison operators, logical operators, if statements, and array destructuring.
