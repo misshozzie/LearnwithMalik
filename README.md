@@ -1,4 +1,3 @@
-
 # LEARN WITH MALIK
 
 This simple browser game is dedicated for toddlers for them to learn educational knowledge. It's colorful, it looks fun, and wholesome, really dedicated for kids. 
@@ -9,7 +8,6 @@ This simple browser game is dedicated for toddlers for them to learn educational
 - [@misshozzie](https://www.github.com/misshozzie)
 - [Instagram](https://www.instagram.com/hosannaikigai/)
 - [LinkedIn](https://www.linkedin.com/in/sannamartin/)
-- [Business Card](https://flowcv.me/sannamartin)
 - [Website](https://www.hosannaikigai.com/)
 
 
@@ -41,8 +39,9 @@ There will be more colors in this browser games, those 5(five) are the main ones
 
 ## Technology and Tools Used
 
-HTML, CSS, Javascript, VS Code, Github,
+HTML, CSS, Javascript, VS Code, CodePen, Github,
 ## GETTING STARTED
+
 ## Instructions:
 
 How to play:
@@ -53,73 +52,11 @@ How to play:
     
     However, if you happen to lose, simply press the 'Restart' button to try again.
 
-## Pseudocode:
-
-START
-
-DECLARE level=1, maxRandomNumber=5, gameIsActive=True
-
-FUNCTION generateQuestion()
-    OPERATOR = CALL getOperator()
-    a = RANDOM NO. BETWEEN 1 and maxRandomNumber
-    b = RANDOM NO. BETWEEN 1 and maxRandomNumber
-
-IF OPERATOR IS '-'
-    IF a IS LESS THAN b
-        SWAP a AND b
-
-IF OPERATOR IS '/'
-    IF a IS LESS THAN b
-        SWAP a AND b
-    c = FLOOR DIVISION a AND b
-    a = c multiplied by b
-
-currentAnswer = CALL getAnswer() WITH a, b AND OPERATOR
-DISPLAY a OPERATOR b =?
-
-FUNCTION getOperator()
-    random = RANDOM NO. BETWEEN O and 1
-    IF random >= 0.75, OPERATOR = '+'   
-    ELSE IF random >= 0.55, OPERATOR = '-'
-    ELSE IF random >= 0.25, OPERATOR = 'x'
-    ELSE, OPEARTOR = '/'
-    RETURN OPERATOR
-
-FUNCTION getAnswer(operator, a b)
-    IF operator equals '+', SUM a and b
-    ELSE IF OPERATOR equals '-', SUBTRACT b from a
-    ELSE IF OPERATOR equals 'x', MULTIPLY a from b
-    ELSE, DIVIDE a by b
-    RETURN result
-
-FUNCTION subitAnswer()
-IF gameIsActive IS FALSE
-    RETURN
-
-userAnswer = USER INPUT
-IF userAnswer equals currentAnswer
-    IF level NOT EQUAL 3
-    INCREMENT level
-    MULTIPLY maxRandomNumber by 5
-ELSE
-    DIPLAY 'Congrats! You are certified mathematician!'
-ELSE
-    DISPLAY 'You lost!'
-    gameIsActive = FALSE
-CLEAR USER INPUT
-CALL generateQuestion()
-
-FUNCTION resetGame()
-    RESET level, maxRandomNumber AND gameIsActive TO INITIAL VALUE
-    CLEAR USER INPUT
-    CALL generateQuestion()
-
-CALL generateQuestion() WHEN PAGE LOADS
-
-END
 
 
-
+## Pseudocode
+![App Screenshot](https://i.imgur.com/C6TYBPo.png)
+![App Screenshot](https://i.imgur.com/fmGbhsa.png)
 
 
 ## Next Features:
@@ -127,18 +64,18 @@ END
 Exciting upcoming features:
 
 * Unlock the _Abacus level_ to enhance your counting and math skills in a playful way.
-* Challenge your _spelling abilities_ with the Spelling Bee level, where words and numbers come together * for even more educational fun.
+* Challenge your _spelling abilities_ with the Spelling Bee level, where words and numbers come together for even more educational fun.
+
 
 
 ## Challenges:
 
-My journey in game development presented several challenges, primarily stemming from the need to incorporate my instructors' suggested features. The task of creating my very first game and integrating additional elements into the one you've already seen was a monumental challenge in itself.
+My journey in game development presented several challenges, primarily stemming from the need to incorporate my instructors' suggested features. The task of creating my very first game and integrating additional elements into the one you've already seen was a monumental challenge in itself. Also, I am a slow in reaction, since im an artist, everything I do must flow with my monumental. It takes me awhile to digest my instructors teaching. But I know that once I get use to the coding itself, these could be my playground one day.
 
-One of the most significant hurdles was the process of inserting the required coding. This task demanded meticulous attention to detail and a deep understanding of programming principles. It involved not only writing new lines of code but also carefully integrating them into the existing framework.
+And one of the most significant hurdles also was the process of inserting the required coding. This task demanded meticulous attention to detail and a deep understanding of programming principles. It involved not only writing new lines of code but also carefully integrating them into the existing framework.
 
 Another major challenge was the strategic thinking required to determine where to place the new logic. Game development is like solving a complex puzzle, and deciding how to seamlessly integrate new features while maintaining the overall gameplay experience was no small feat. This often meant revisiting and reworking existing components to ensure everything worked harmoniously.
 
-In essence, the entire process was a continuous cycle of brainstorming, coding, testing, and refining. It required a substantial amount of critical thinking and problem-solving skills. Despite the challenges, the experience of creating a game from scratch and enhancing it with new features has been both rewarding and educational.
 
 ## favorite Code:
 
@@ -151,8 +88,7 @@ This if statement checks 2 conditions. and if both conditions are true, this ins
 What I like abou this is... This code is simple and concise, yet it accomplishes a meaningful task (swapping two variables if a condition is met). 
 The use of array destructuring to swap variables in JavaScript is considered an elegant solution because it doesn't require a temporary variable.
 This code could be part of a larger function where the order of *a* and *b* matters when the operator is *-*, making it a crucial piece of logic.
-This piece of code might have helped you understand some important concepts in JavaScript, such as comparison operators, logical operators, if statements, and array destructuring.
-
+This piece of code might have helped me understand some important concepts in JavaScript, such as comparison operators, logical operators, if statements, and array destructuring.
 ## Feedback
 
 If you have any feedback, please email me at artist@hosannaikigai.com
