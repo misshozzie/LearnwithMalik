@@ -15,7 +15,7 @@ This simple browser game is dedicated for toddlers for them to learn educational
 
 ## Live Game
 
-Insert gif or link to demo
+https://misshozzie.github.io/LearnwithMalik/
 
 
 
