@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Learn With Malik</title>
 </head>
@@ -15,51 +15,14 @@
 <body>
 
   <header>
-    <h1 id="header">Learn With Malik</h1>
-      <nav>
-        <ul>
-        <li><a href="index.html">Math</a></li>
-        <li>Spelling</li>
-        <li>Science</li>
-        <li>Social</li>
-        <li>About</li>
-        <li>Contact</li>
-        </ul>
-      </nav>
+    <h1 id="header">Learn with Malik</h1>
   </header>
 
-  <div class="wrap1">
-           <ul>
-            <li><a href="index.html">Add</a></li>
-            <li>Subtract</li>
-            <li>Multiply</li>
-            <li>Divide</li>
-            </ul> 
-    </div>
-
-  <div class="wrap2">
-    <div class="mathEquation">
-           <span id="num1"></span>
-           <span>+</span>
-           <span id="num2"></span>
-           <span>=</span>
-           <span>?</span>
-    </div>
-    <div class="choices">
-          <div class="choices"><span id="choice1">1</span>
-          </div>
-          <div class="choices"><span id="choice2">2</span>
-          </div>
-          <div class="choices"><span id="choice3">3</span>
-          </div>
-    </div>
-  </div>
-  <div class="resetButton">
-      <div class="reset"><span id="Reset">Reset</span>
-    </div>
-    <div class="pageInfo"><span id="next">Next</span>
-    </div>
-    
-    <script src="script.js"></script>
+  <div id="question"></div>
+  <input id="answer" type="number">
+  <button id="submit" onclick="submitAnswer()">Submit</button>
+  <button id="restart" onclick="resetGame()">Restart</button>
+  <div id="message"></div>
+  <script src="script.js"></script>
 </body>
 </html>

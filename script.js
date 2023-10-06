@@ -1,58 +1,45 @@
-/* ----- CONSTANTS ----- */
-const choice1 = document.getElementById("choice1");
-const choice2 = document.getElementById("choice2");
-const choice3 = document.getElementById("choice3");
-const resetButton = document.getElementById("Reset");
+let currentAnswer;
+let level = 1;
+let maxRandomNumber = 5;
+let gameIsActive = true;
 
-/* ----- VARIABLES ----- */
-let answer = 0;
+function generateQuestion() {
+	const operator = Math.random() >= 0.5 ? '+' : '-';
+	let a = Math.floor(Math.random() * maxRandomNumber) + 1;
+	let b = Math.floor(Math.random() * maxRandomNumber) + 1;
+	if (operator === '-' && a < b) {
+		[a, b] = [b, a];
+	}
+	currentAnswer = operator === '+' ? a + b : a - b;
+	document.getElementById('question').innerText = `${a} ${operator} ${b} = ?`;
+}
 
+function submitAnswer() {
+  if (!gameIsActive) return;
+  let userAnswer = document.getElementById('answer').value;
+  if (+userAnswer === currentAnswer) {
+      if (level !== 3) {
+        document.getElementById('message').textContent = `You won! Level up to ${++level}`;
+        maxRandomNumber *= 5;
+      } else {
+        document.getElementById('message').textContent = 'Congrats! You are certified mathematician!';
+      }
+  } else {
+      document.getElementById('message').textContent = 'You lost!';
+      gameIsActive = false;
+  }
+  document.getElementById('answer').value = '';
+  generateQuestion();
+}
+function resetGame() {
+  level = 1;
+  maxRandomNumber = 5;
+  gameIsActive = true;
+  document.getElementById('message').textContent = '';
+  document.getElementById('answer').value = '';
+  generateQuestion();
+}
 
-/* ----- FUNCTIONS ----- */
-function generateProblem() { 
-  let num1 = Math.floor(Math.random() * 10);
-  let num2 = Math.floor(Math.random() * 10);
-  let wrongAns1 = Math.floor(Math.random() * 10);
-  let wrongAns2 = Math.floor(Math.random() * 10);
-      allChoices = [],
-      shuffleshChoices = [];
-
-  answer = num1 + num2;
-  
-  document.getElementById("num1").innerHTML = num1; 
-  document.getElementById("num2").innerHTML = num2; 
-
-  allChoices = [answer, wrongAns1, wrongAns2];
-
-  for (i = allChoices.length; i--;){
-    shuffleshChoices.push(allChoices.splice(Math.floor(Math.random() * (i + 1)), 1)[0]);
-  };
-
-  choice1.innerHTML = shuffleshChoices[0];
-  choice2.innerHTML = shuffleshChoices[1];
-  choice3.innerHTML = shuffleshChoices[2]; 
+window.onload = function() {
+	generateQuestion();
 };
-
-choice1.addEventListener("click", function(){
-    if(choice1.innerHTML == answer){
-      generateProblem();
-    }
-});
-
-choice2.addEventListener("click", function(){
-    if(choice2.innerHTML == answer){
-      generateProblem();
-    }
-    });
-
-choice3.addEventListener("click", function(){
-    if(choice3.innerHTML == answer){
-      generateProblem();
-    }
-});
-
-resetButton.addEventListener("click", function(){
-  generateProblem();
-  });
-
-  generateProblem()
