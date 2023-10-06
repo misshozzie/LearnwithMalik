@@ -59,12 +59,8 @@ How to play:
 
 Exciting upcoming features:
 
-* Explore more mathematical operators like _multiplication and division_, as the game evolves to keep pace with your learning.
 * Unlock the _Abacus level_ to enhance your counting and math skills in a playful way.
 * Challenge your _spelling abilities_ with the Spelling Bee level, where words and numbers come together * for even more educational fun.
-* Get ready for an adventure in learning that's both entertaining and enriching. 'Learn with Malik' - making math magical for young minds!"
-
-Feel free to make any additional adjustments or ask for further edits if needed!
 
 
 ## Challenges:
@@ -81,15 +77,15 @@ In essence, the entire process was a continuous cycle of brainstorming, coding, 
 
 "My favorite piece of code in this game is:
 
-*window.onload = function( ){ }*
+*if (operator === '-' && a < b) { [a, b] = [b, a];}*
 
-At first glance, it may seem quite simple. However, for me, it holds a tremendous amount of power and significance. This single line of code provides me with a profound sense of security, assuring me that my entire codebase will function flawlessly in a live environment.
+This if statement checks 2 conditions. and if both conditions are true, this inside curly bracket will be executed.
 
-The 'window.onload' event handler ensures that all the code inside it is executed only after the entire web page, including its content and resources, has fully loaded. This level of precision is vital, especially in game development, where timing and synchronization are critical.
+What I like abou this is... This code is simple and concise, yet it accomplishes a meaningful task (swapping two variables if a condition is met). 
+The use of array destructuring to swap variables in JavaScript is considered an elegant solution because it doesn't require a temporary variable.
+This code could be part of a larger function where the order of *a* and *b* matters when the operator is *-*, making it a crucial piece of logic.
+This piece of code might have helped you understand some important concepts in JavaScript, such as comparison operators, logical operators, if statements, and array destructuring.
 
-When the 'window.onload' event is triggered, I know that everything is in place, all assets are loaded, and the game is ready to run smoothly. It's like the moment before a grand performance, where everything is set, and I can be confident that players will experience the game exactly as intended.
-
-In the world of coding, it's often the seemingly simple and elegant solutions that bring the most peace of mind. This single line of code exemplifies that principle, making it my favorite and most reassuring part of the game's codebase."
 ## Feedback
 
 If you have any feedback, please email me at artist@hosannaikigai.com
