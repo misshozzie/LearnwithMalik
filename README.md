@@ -53,6 +53,73 @@ How to play:
     
     However, if you happen to lose, simply press the 'Restart' button to try again.
 
+## Pseudocode:
+
+START
+
+DECLARE level=1, maxRandomNumber=5, gameIsActive=True
+
+FUNCTION generateQuestion()
+    OPERATOR = CALL getOperator()
+    a = RANDOM NO. BETWEEN 1 and maxRandomNumber
+    b = RANDOM NO. BETWEEN 1 and maxRandomNumber
+
+IF OPERATOR IS '-'
+    IF a IS LESS THAN b
+        SWAP a AND b
+
+IF OPERATOR IS '/'
+    IF a IS LESS THAN b
+        SWAP a AND b
+    c = FLOOR DIVISION a AND b
+    a = c multiplied by b
+
+currentAnswer = CALL getAnswer() WITH a, b AND OPERATOR
+DISPLAY a OPERATOR b =?
+
+FUNCTION getOperator()
+    random = RANDOM NO. BETWEEN O and 1
+    IF random >= 0.75, OPERATOR = '+'   
+    ELSE IF random >= 0.55, OPERATOR = '-'
+    ELSE IF random >= 0.25, OPERATOR = 'x'
+    ELSE, OPEARTOR = '/'
+    RETURN OPERATOR
+
+FUNCTION getAnswer(operator, a b)
+    IF operator equals '+', SUM a and b
+    ELSE IF OPERATOR equals '-', SUBTRACT b from a
+    ELSE IF OPERATOR equals 'x', MULTIPLY a from b
+    ELSE, DIVIDE a by b
+    RETURN result
+
+FUNCTION subitAnswer()
+IF gameIsActive IS FALSE
+    RETURN
+
+userAnswer = USER INPUT
+IF userAnswer equals currentAnswer
+    IF level NOT EQUAL 3
+    INCREMENT level
+    MULTIPLY maxRandomNumber by 5
+ELSE
+    DIPLAY 'Congrats! You are certified mathematician!'
+ELSE
+    DISPLAY 'You lost!'
+    gameIsActive = FALSE
+CLEAR USER INPUT
+CALL generateQuestion()
+
+FUNCTION resetGame()
+    RESET level, maxRandomNumber AND gameIsActive TO INITIAL VALUE
+    CLEAR USER INPUT
+    CALL generateQuestion()
+
+CALL generateQuestion() WHEN PAGE LOADS
+
+END
+
+
+
 
 
 ## Next Features:
