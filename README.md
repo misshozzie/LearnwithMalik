@@ -3,14 +3,6 @@
 This simple browser game is dedicated for toddlers for them to learn educational knowledge. It's colorful, it looks fun, and wholesome, really dedicated for kids. 
 
 
-## Author/ Designer/ Coder social links:
-
-- [@misshozzie](https://www.github.com/misshozzie)
-- [Instagram](https://www.instagram.com/hosannaikigai/)
-- [LinkedIn](https://www.linkedin.com/in/sannamartin/)
-- [Website](https://www.hosannaikigai.com/)
-
-
 ## Live Game
 
 https://misshozzie.github.io/LearnwithMalik/
