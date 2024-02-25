@@ -83,5 +83,4 @@ This code could be part of a larger function where the order of *a* and *b* matt
 This piece of code might have helped me understand some important concepts in JavaScript, such as comparison operators, logical operators, if statements, and array destructuring.
 ## Feedback
 
-If you have any feedback, please email me at artist@hosannaikigai.com
 
